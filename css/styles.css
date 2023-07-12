@@ -5,9 +5,20 @@
     --iriscolor: #4D5AE5;
     --navyblue:#2E2F42;
     --navcolor: black;
-    --oceancolor: #2196f3;
+    --oceancolor: #404BBF;
     --whitecolor: white;
     --slate:#434455;
+    --cloud:#F4F4FD;
+}
+
+body
+{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 
 .link-logo
@@ -42,13 +53,9 @@
 .navbar .navlist-top-pages
 {
     color: var(--navcolor);
-    font-family: 'Roboto',sans-serif;
     text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+
 }
 
 .lists
@@ -58,7 +65,11 @@
 
 .navbar .navlist-top-pages:hover,
 .navbar .navlist-top-pages:focus,
-.navbar .navlist-top-pages.currentoption,
+.navbar .navlist-top-pages.currentoption
+{
+    color: var(--oceancolor);
+}
+
 .contacts-top .contact-info-top:hover,
 .contacts-top .contact-info-top:focus 
 {
@@ -67,39 +78,39 @@
 
 .contacts-top .contact-info-top
 {
-    font-family: 'Roboto', sans-serif;
     color: var(--navcolor);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
     text-decoration: none;
 }
 
-.bg-section1
+.hero-background
 {
     background-color: var(--navyblue);
 }
 
-.h1-section1
+.section-grey
 {
-    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4FD;
+}
+
+.header1
+{
     color:var(--whitecolor);
     text-align: center;
     font-size: 56px;
-    font-style: normal;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 1.12px;
 }
 
-.btn {
+.filter 
+{ /*button css*/
     cursor: pointer;
-    border-color: transparent;
+    border: 1px solid var(--cornflower, #E7E9FC);
     color: var(--iriscolor);
-    text-align: center;
-    font-family: Roboto;
+    background-color: var(--cloud);
+    border-radius: 4px;
+
+    font-family: inherit;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -107,59 +118,69 @@
     letter-spacing: 0.64px;
 }
 
-.btn.primary{
+.filter-active, .filter:hover, .filter:focus
+{
     background-color: var(--iriscolor);
-    color:var(--whitecolor);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.64px;
+    border-color:var(--iriscolor);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--whitecolor);
 }
 
-.btn:hover,
-.btn:focus,
-.btn.primary:hover,
-.btn.primary:focus
+.filter.filter-active:hover,
+.filter.filter-active:focus
 {
     background-color: var(--oceancolor);
 }
 
-.header3-list
-{
-    color: var(--navyblue);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-    text-transform: capitalize;
-}
-
-.parag-description
-{
-    color: var(--slate);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-}
-
-.section-title
+.section-title 
 {
     color: var(--navyblue);
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+}
+
+.features-list-title 
+{
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.features-description 
+{
+    color: var(--slate);
+}
+
+.team-list-title 
+{
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.team-description {
+    color: var(--slate);
+}
+
+.project-list-title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.project-description {
+    color: var(--slate);
 }
 
 .footer {
@@ -179,11 +200,5 @@
 
 .parag-bottom {
     color: var(--whitecolor);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-}
+} 
 
